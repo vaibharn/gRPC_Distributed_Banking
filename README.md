@@ -1,6 +1,6 @@
 # gRPC Distributed Banking
 
-The problem statement is to develop a distributed banking system that enables numerous customers to conduct withdrawals and deposits across various branches within the bank. It is presumed that all customers share a common bank account, and each customer is linked to a specific branch for their transactions. Furthermore, the project operates under the assumption that concurrent updates to the bank account do not occur. Each branch is responsible for maintaining a copy of the funds, which must remain synchronized with the copies held in other branches. To facilitate this, each customer exclusively interacts with the branch identified by their unique ID. Although each customer independently updates a designated replica, it is essential for all replicas stored in every branch to accurately reflect the cumulative updates made by the customer.
+This project aims to enhance the existing Project 1 by implementing a client-centric consistency model for the distributed banking system. The primary objective is to develop essential functions that enforce the read-your-writes consistency model, ensuring coherence in replicated data across the bank. The key tasks involve tracking read and write events by the same customer across various branch processes and implementing read-your-writes consistency among these processes. The project addresses the challenge of maintaining data consistency as customers change branches while submitting requests to the bank.
 
 
 The following technologies were used in making of this project:
