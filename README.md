@@ -1,6 +1,6 @@
 # gRPC Distributed Banking
 
-The problem statement is to develop a distributed banking system that enables numerous customers to conduct withdrawals and deposits across various branches within the bank. It is presumed that all customers share a common bank account, and each customer is linked to a specific branch for their transactions. Furthermore, the project operates under the assumption that concurrent updates to the bank account do not occur. Each branch is responsible for maintaining a copy of the funds, which must remain synchronized with the copies held in other branches. To facilitate this, each customer exclusively interacts with the branch identified by their unique ID. Although each customer independently updates a designated replica, it is essential for all replicas stored in every branch to accurately reflect the cumulative updates made by the customer.
+The objective of this project is to enhance the coordination and synchronization among the customer and branch processes for the distributed banking system created in Project 1. The current system lacks a robust mechanism for maintaining a consistent order of events across these processes, leading to potential inconsistencies and difficulties in tracking the sequence of operations.
 
 
 The following technologies were used in making of this project:

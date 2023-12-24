@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rexample.proto\"<\n\x0c\x42\x61nkingEvent\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x11\n\tinterface\x18\x02 \x01(\t\x12\r\n\x05money\x18\x03 \x01(\x05\"&\n\x08Response\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0e\n\x06result\x18\x02 \x01(\t\"$\n\nNewBalance\x12\x16\n\x0eupdatedbalance\x18\x02 \x01(\x05\"\x1d\n\rPropagateResp\x12\x0c\n\x04resp\x18\x01 \x01(\t2\x97\x01\n\x03RPC\x12)\n\x0bMsgDelivery\x12\r.BankingEvent\x1a\t.Response\"\x00\x12\x31\n\x10PropagateDeposit\x12\x0b.NewBalance\x1a\x0e.PropagateResp\"\x00\x12\x32\n\x11PropagateWithdraw\x12\x0b.NewBalance\x1a\x0e.PropagateResp\"\x00\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rexample.proto\"K\n\x0c\x42\x61nkingEvent\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x11\n\tinterface\x18\x02 \x01(\t\x12\r\n\x05money\x18\x03 \x01(\x05\x12\r\n\x05\x63lock\x18\x04 \x01(\x05\"&\n\x08Response\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x0e\n\x06result\x18\x02 \x01(\t\"?\n\nNewBalance\x12\r\n\x05\x63lock\x18\x01 \x01(\x05\x12\x16\n\x0eupdatedbalance\x18\x02 \x01(\x05\x12\n\n\x02id\x18\x03 \x01(\x05\"\x1d\n\rPropagateResp\x12\x0c\n\x04resp\x18\x01 \x01(\t2\x97\x01\n\x03RPC\x12)\n\x0bMsgDelivery\x12\r.BankingEvent\x1a\t.Response\"\x00\x12\x31\n\x10PropagateDeposit\x12\x0b.NewBalance\x1a\x0e.PropagateResp\"\x00\x12\x32\n\x11PropagateWithdraw\x12\x0b.NewBalance\x1a\x0e.PropagateResp\"\x00\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -21,13 +21,13 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'example_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   DESCRIPTOR._options = None
   _globals['_BANKINGEVENT']._serialized_start=17
-  _globals['_BANKINGEVENT']._serialized_end=77
-  _globals['_RESPONSE']._serialized_start=79
-  _globals['_RESPONSE']._serialized_end=117
-  _globals['_NEWBALANCE']._serialized_start=119
-  _globals['_NEWBALANCE']._serialized_end=155
-  _globals['_PROPAGATERESP']._serialized_start=157
-  _globals['_PROPAGATERESP']._serialized_end=186
-  _globals['_RPC']._serialized_start=189
-  _globals['_RPC']._serialized_end=340
+  _globals['_BANKINGEVENT']._serialized_end=92
+  _globals['_RESPONSE']._serialized_start=94
+  _globals['_RESPONSE']._serialized_end=132
+  _globals['_NEWBALANCE']._serialized_start=134
+  _globals['_NEWBALANCE']._serialized_end=197
+  _globals['_PROPAGATERESP']._serialized_start=199
+  _globals['_PROPAGATERESP']._serialized_end=228
+  _globals['_RPC']._serialized_start=231
+  _globals['_RPC']._serialized_end=382
 # @@protoc_insertion_point(module_scope)

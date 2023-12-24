@@ -4,6 +4,7 @@ message BankingEvent {
     int32 id = 1;
     string interface = 2;
     int32 money = 3;
+    int32 clock = 4;
 }
 
 message Response {
@@ -12,7 +13,9 @@ message Response {
 }
 
 message NewBalance {
+    int32 clock = 1;
     int32 updatedbalance = 2;
+    int32 id = 3;
 }
 
 message PropagateResp {
