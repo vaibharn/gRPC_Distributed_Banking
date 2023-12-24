@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+message BankingEvent {
+    int32 id = 1;
+    string interface = 2;
+    int32 money = 3;
+}
+
+message Response {
+    int32 id = 1;
+    string result = 2;
+}
+
+message NewBalance {
+    int32 updatedbalance = 2;
+}
+
+message PropagateResp {
+    string resp = 1;
+}
+
+service RPC {
+    rpc MsgDelivery(BankingEvent) returns (Response) {}
+    rpc PropagateDeposit(NewBalance) returns (PropagateResp) {}
+    rpc PropagateWithdraw(NewBalance) returns (PropagateResp) {}
+}
+
+
+
+
+
+
+
